@@ -3,6 +3,7 @@ on:
   push:
     branches: 
     - main
+    - test
   workflow_dispatch:
 jobs:
   MyFirstJob:
@@ -10,7 +11,7 @@ jobs:
 
     steps:
       - name: Output "Hello World"
-        run: echo "👋 Hello World!"
+        run: echo "👋 Hello World from another branch!"
         
       - name: Checkout
         uses: actions/checkout@v4.1.4
