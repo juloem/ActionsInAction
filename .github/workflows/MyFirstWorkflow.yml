@@ -18,6 +18,17 @@ jobs:
         
       - name: actionlint
         uses: devops-actions/actionlint@v0.1.2
+
+      - name: check commit messages
+        uses: commit-check/commit-check-action@v1
+        with:
+          message: true
+          branch: true
+          author-name: false
+          author-email: false
+          commit-signoff: false
+          dry-run: false
+          job-summary: false
         
       - name: List files in repository
         run: |
