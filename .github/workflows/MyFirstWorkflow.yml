@@ -20,4 +20,7 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+
+      - name: Environment Variable
+        run: echo "{environment_variable_name}={value}" >> "$GITHUB_ENV"
       
