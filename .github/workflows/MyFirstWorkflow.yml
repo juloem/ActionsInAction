@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.4
         
+      - name: actionlint
+        uses: devops-actions/actionlint@v0.1.2
+        
       - name: List files in repository
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
