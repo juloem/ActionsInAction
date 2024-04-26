@@ -27,6 +27,6 @@ jobs:
       - name: Environment Variable
         run: echo "{environment_variable_name}={value}" >> "$GITHUB_ENV"
 
-      - run: echo '### Hello World! :rocket:' >> $GITHUB_STEP_SUMMARY
-      - run: echo '## Love this feature! :medal_sports:' >> $GITHUB_STEP_SUMMARY
+      - run: echo "### Hello World! :rocket:" >> $GITHUB_STEP_SUMMARY
+      - run: echo "## Love this feature! :medal_sports:" >> $GITHUB_STEP_SUMMARY
       
