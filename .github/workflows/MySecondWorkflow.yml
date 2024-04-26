@@ -1,4 +1,4 @@
-name: Multiple Jobs
+name: Run multiple jobs
 on: 
   push:
     branches:
