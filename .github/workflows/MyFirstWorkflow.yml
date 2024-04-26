@@ -29,6 +29,6 @@ jobs:
         
       - name: Output another "Hello World"
         run: |
-          echo "### Hello World! :rocket:" >> $GITHUB_STEP_SUMMARY
-          echo "## Love this feature! :medal_sports:" >> $GITHUB_STEP_SUMMARY
+          echo "### Hello World! :rocket:" >> "$GITHUB_STEP_SUMMARY"
+          echo "## Love this feature! :medal_sports:" >> "$GITHUB_STEP_SUMMARY"
       
